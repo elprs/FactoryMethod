@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ingredients.cs" />
+    <Compile Include="AbstractFactory\Suzuki.cs" />
+    <Compile Include="FactoryMethod\FactoryMethodSample.cs" />
+    <Compile Include="FactoryMethod\Ingredients.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sandwich.cs" />
+    <Compile Include="FactoryMethod\Sandwich.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
