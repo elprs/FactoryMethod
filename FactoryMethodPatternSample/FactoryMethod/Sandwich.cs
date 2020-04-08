@@ -33,4 +33,19 @@ namespace FactoryMethodPatternSample
         }
     }
 
+    class HotDog : Sandwich
+    {
+        protected override List<Ingredient> SelectIngredients()
+        {
+            return new List<Ingredient>
+            {
+                new Bread(),
+                new Sausage(),
+                new Mustard(),
+                new Mustard()
+            };
+        }
+    }
+
+
 }

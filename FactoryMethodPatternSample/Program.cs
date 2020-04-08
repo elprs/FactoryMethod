@@ -10,6 +10,9 @@ namespace FactoryMethodPatternSample
     {
         static void Main(string[] args)
         {
+            FactoryMethod.FactoryMethodSample.Sample();
         }
+
+
     }
 }

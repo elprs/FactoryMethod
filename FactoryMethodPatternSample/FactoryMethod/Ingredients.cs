@@ -50,4 +50,20 @@ namespace FactoryMethodPatternSample
             return 0.5m;
         }
     }
+
+    class Sausage : Ingredient
+    {
+        public override decimal Cost()
+        {
+            return 1.5m;
+        }
+    }
+
+    class Mustard : Ingredient
+    {
+        public override decimal Cost()
+        {
+            return 0.3m;
+        }
+    }
 }
