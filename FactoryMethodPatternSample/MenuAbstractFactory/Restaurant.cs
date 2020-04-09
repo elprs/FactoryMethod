@@ -97,10 +97,13 @@ namespace FactoryMethodPatternSample.MenuAbstractFactory
         }
     }
 
-    #region ===== unfruitful try ,  commented out code that makes SOME sense but is not completely right ============== 
-    // we learn from mistakes :
 
+    //Please, help me to find the mistakes : 
 
+    #region ===== unfruitful attemts ============== 
+    
+
+    //try 1
 
 
     //class FamilyMenu
@@ -127,7 +130,7 @@ namespace FactoryMethodPatternSample.MenuAbstractFactory
 
     //}
 
-
+        //try 2
 
     //class FamilyMenu
     //{
@@ -158,44 +161,81 @@ namespace FactoryMethodPatternSample.MenuAbstractFactory
     //    }
     //}
 
+  
+        //try 3
 
-    ////client
-    //class MenuProduction
+    //class FamilyMenu
     //{
-    //    private FamilyMenu _familyMenu;
+    //    public AdultPortion AdultPortion1 { get; }
+    //    public AdultPortion AdultPortion2 { get; }
+    //    public ChildPortion ChildPortion1 { get; }
+    //    public ChildPortion ChildPortion2 { get; }
 
 
-    //    public MenuProduction(FamilyMenu familyMenu)
+    //    public FamilyMenu(AdultPortion mainDish1, ChildPortion mainDish2, AdultPortion dessertDish1, ChildPortion dessertDish2)
     //    {
-    //        _familyMenu = familyMenu;
+    //        AdultPortion1 = mainDish1;
+    //        AdultPortion2 = dessertDish1;
+    //        ChildPortion1 = mainDish2;
+    //        ChildPortion2 = dessertDish2;
     //    }
 
-    //   public FamilyMenu CreateMenu( )
+    //    public void GiveGifts()
     //    {
-    //        var mainDishes = AdultPortion.MakeAdultPortion();
-    //        var desserts = _dessertDishDepartment.MakeChildPortion();
+    //        ChildPortion1.Gift(); //why does it give two "I have a toy " ? (from the main menu)
+    //        ChildPortion2.Gift();
+    //    }
 
-    //      return new FamilyMenu( mainDishes,  desserts);
+
+    //    public override string ToString()
+    //    {
+    //        return $"The {AdultPortion1.GetType().Name} with the {AdultPortion2.GetType().Name} comes as an offer with children's meals at the total cost of {AdultPortion1.Price + AdultPortion2.Price + ChildPortion1.Price + ChildPortion2.Price }";
+    //    }
+    //}
+
+
+    //    //client&Demo based on try 3 of familyMenu : 
+
+    ////client 
+    //class MenuProduction
+    //{
+
+    //    private DishesDepartment _dishes;
+
+        
+    //    public MenuProduction(DishesDepartment dishes)
+    //    {
+    //       _dishes = dishes;
+    //    }
+
+    //    public FamilyMenu CreateMenu()
+    //    {
+    //        var main1 = _dishes.MakeAdultPortion();
+    //        var main2 = _dishes.MakeChildPortion();
+    //        var dessert1 = _dishes.MakeAdultPortion();
+    //        var dessert2 = _dishes.MakeChildPortion();
+
+
+    //        return new FamilyMenu(main1, main2, dessert1, dessert2);
     //    }
 
     //}
 
+
     //class AbstractFactoryDemo
     //{
-    //    public  static void Demo()
+    //    public static void Demo()
     //    {
-    //        var menuForTwo = new MenuProduction(new MainDishDepartment(), new DessertDishDepartment());
-    //        var familyMenuForTwo = menuForTwo.CreateMenu();
-    //        Console.WriteLine(familyMenuForTwo);
-    //        familyMenuForTwo.ToString();
-    //        Console.WriteLine("Your surprice is: ");
-    //        familyMenuForTwo.GiveGifts();
+    //        var happymeal = new MenuProduction(new MainDish());
+    //        var familyMenu = happymeal.CreateMenu();
+            
+    //        Console.WriteLine($"Your meal is {familyMenu.ToString()}");
+    //        familyMenu.GiveGifts();
 
     //        Console.Read();
 
     //    }
     //}
-
 
 
     #endregion
