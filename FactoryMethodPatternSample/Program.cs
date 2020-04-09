@@ -7,9 +7,11 @@ namespace FactoryMethodPatternSample
         static void Main(string[] args)
         {
             //FactoryMethod.FactoryMethodSample.SandwitchSample();
-            PrinterFactoryMethod.PrinterFactory.CustomerChoosing();
+            //PrinterFactoryMethod.PrinterFactory.CustomerChoosing();
 
-           // AbstractFactory.AbstractFactoryDemo.Demo();
+            // AbstractFactory.AbstractFactoryDemo.Demo();
+
+            MenuAbstractFactory.AbstractFactoryDemo.Demo();
           
 
 

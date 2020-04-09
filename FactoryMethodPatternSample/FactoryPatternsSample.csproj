@@ -46,6 +46,7 @@
     <Compile Include="AbstractFactory\Suzuki.cs" />
     <Compile Include="FactoryMethod\FactoryMethodSample.cs" />
     <Compile Include="FactoryMethod\Ingredients.cs" />
+    <Compile Include="MenuAbstractFactory\Restaurant.cs" />
     <Compile Include="PrinterFactoryMethod\PrinterFactoryMethod.cs" />
     <Compile Include="PrinterFactoryMethod\PrinterStore.cs" />
     <Compile Include="PrinterFactoryMethod\PrinterTypes.cs" />
