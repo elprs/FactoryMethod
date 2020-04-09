@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57F9F57F-40A8-4D79-BF2F-E88EDE51721E}</ProjectGuid>
+    <ProjectGuid>{E9F9C870-5467-41E1-BA80-9D9EA08DF45A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FactoryMethodPatternSample</RootNamespace>
-    <AssemblyName>FactoryMethodPatternSample</AssemblyName>
+    <RootNamespace>PrinterFactory</RootNamespace>
+    <AssemblyName>PrinterFactory</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory\Suzuki.cs" />
-    <Compile Include="FactoryMethod\FactoryMethodSample.cs" />
-    <Compile Include="FactoryMethod\Ingredients.cs" />
-    <Compile Include="PrinterFactoryMethod\PrinterFactoryMethod.cs" />
-    <Compile Include="PrinterFactoryMethod\PrinterStore.cs" />
-    <Compile Include="PrinterFactoryMethod\PrinterTypes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FactoryMethod\Sandwich.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -20,7 +20,7 @@ namespace FactoryMethodPatternSample.FactoryMethod
             }
         }
 
-        public static void Sample()
+        public static void SandwitchSample()
         {
             Console.Write("Where are you from? ");
             var country = Console.ReadLine();
