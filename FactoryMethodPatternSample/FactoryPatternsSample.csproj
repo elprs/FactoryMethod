@@ -49,7 +49,7 @@
     <Compile Include="MenuAbstractFactory\Restaurant.cs" />
     <Compile Include="PrinterFactoryMethod\PrinterFactoryMethod.cs" />
     <Compile Include="PrinterFactoryMethod\PrinterStore.cs" />
-    <Compile Include="PrinterFactoryMethod\PrinterTypes.cs" />
+    <Compile Include="PrinterFactoryMethod\Printer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FactoryMethod\Sandwich.cs" />

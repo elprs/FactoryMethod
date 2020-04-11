@@ -8,7 +8,7 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
 {
     abstract class PrinterStore
     {
-        public List<PrinterTypes> Printers { get;  }
+        public List<Printer> Printers { get;  }
 
         public decimal TotalCost => Printers.Sum(printer => printer.Price());
 
@@ -17,15 +17,15 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
             Printers = SelectedPrinters();
         }
 
-        protected abstract List<PrinterTypes> SelectedPrinters();
+        protected abstract List<Printer> SelectedPrinters();
     }
 
 
     class Kotsovolos : PrinterStore
     {
-        protected override List<PrinterTypes> SelectedPrinters()
+        protected override List<Printer> SelectedPrinters()
         {
-            return new List<PrinterTypes>
+            return new List<Printer>
             {
                 new LEDPrinter(),
                 new LEDPrinter(),
@@ -36,9 +36,9 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
 
     class Public : PrinterStore
     {
-        protected override List<PrinterTypes> SelectedPrinters()
+        protected override List<Printer> SelectedPrinters()
         {
-            return new List<PrinterTypes>
+            return new List<Printer>
            {
                new ThermalPrinter(),
                new PDFPrinter(),

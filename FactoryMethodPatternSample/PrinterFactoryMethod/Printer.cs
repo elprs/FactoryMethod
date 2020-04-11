@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodPatternSample.PrinterFactoryMethod
 {
-    abstract class PrinterTypes
+    abstract class Printer
     {
         public string PrinterBrand { get; set; }
         public abstract string Print();
@@ -14,7 +14,7 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
     }
 
 
-    class LEDPrinter : PrinterTypes
+    class LEDPrinter : Printer
     {
         public new string PrinterBrand = "HP";
         public override string Print()
@@ -27,7 +27,7 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
             return 30.0m;
         }
     }
-    class ThermalPrinter : PrinterTypes
+    class ThermalPrinter : Printer
     {
         public new string PrinterBrand = "HP";
         public override string Print()
@@ -39,7 +39,7 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
             return 50.0m;
         }
     }
-    class PDFPrinter : PrinterTypes
+    class PDFPrinter : Printer
     {
         public new string PrinterBrand = "Canon";
         public override string Print()
@@ -51,7 +51,7 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
             return 40.0m;
         }
     }
-    class ThreeDPrinter : PrinterTypes
+    class ThreeDPrinter : Printer
     {
         public new string PrinterBrand = "Brother";
         public override string Print()
@@ -63,7 +63,7 @@ namespace FactoryMethodPatternSample.PrinterFactoryMethod
             return 100.0m;
         }
     }
-    class LaserPrinter : PrinterTypes
+    class LaserPrinter : Printer
     {
         public new string PrinterBrand = "Epson";
         public override string Print()
